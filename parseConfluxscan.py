@@ -33,7 +33,7 @@ class data:
             data[ii] = self.parsed[listNames[ii]]
         self.df = DataFrame (data).transpose()
         self.df.columns = listNames
-        self.df.to_csv('data_'+str(int(time.time()))+'.csv')
+        self.df.to_csv('./csv/data_'+str(int(time.time()))+'.csv')
 
 
 if __name__=="__main__":
