@@ -1,2 +1,5 @@
-# Conflux Data Parsing
-Repository for parsing data from Confluxscan
+# Data Parsing
+Miscellaneous repository for various data parsing from various sources
+* Confluxscan
+* Mining metrics
+* Github
