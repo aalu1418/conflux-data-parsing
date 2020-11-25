@@ -19,17 +19,17 @@ class GithubRepo {
     );
     await this.rateLimit();
 
-    console.log("Fetching Commits");
-    await this.getYearlyCommits();
-
-    console.log("Fetching Issues");
-    await this.getYearlyIssues();
-
     console.log("Fetching Stars");
     await this.getStars();
 
     console.log("Fetching Forks");
     await this.getForks();
+
+    console.log("Fetching Commits");
+    await this.getYearlyCommits();
+
+    console.log("Fetching Issues");
+    await this.getYearlyIssues();
 
     console.log("Fetching Lines");
     await this.getLines();
@@ -76,10 +76,10 @@ class GithubRepo {
   // get issues/PRs opened and closed past year
   async getYearlyIssues() {
     let i = 0;
-    this.prClosed = 0;
     this.prTotal = 0;
-    this.issueClosed = 0;
+    this.prClosed = 0;
     this.issueTotal = 0;
+    this.issueClosed = 0;
 
     await loopPages(
       "GET /repos/{owner}/{repo}/issues",
@@ -144,12 +144,12 @@ const loopPages = async (url, params, callback) => {
 
 const main = async () => {
   const repoOwner = {
-    "conflux-chain": ["conflux-rust", "js-conflux-sdk"],
-    near: ["nearcore", "near-api-js"],
-    cosmos: ["cosmos", "cosmos-sdk"],
+    ethereum: ["go-ethereum", "web3.js"],
     paritytech: ["substrate"],
     "polkadot-js": ["api"],
-    ethereum: ["go-ethereum", "web3.js"]
+    cosmos: ["cosmos", "cosmos-sdk"],
+    near: ["nearcore", "near-api-js"],
+    "conflux-chain": ["conflux-rust", "js-conflux-sdk"]
   };
 
   //generate filename
@@ -161,7 +161,6 @@ const main = async () => {
 
     //loop over all the repos associated with owner
     for (let i = 0; i < repoOwner[owner].length; i++) {
-
       //adding components to form json object
       let prefix = "";
       let suffix = ",";
