@@ -3,13 +3,23 @@ require("dotenv").config();
 const octokit = new Octokit({ auth: process.env.GITHUB });
 const fs = require("fs");
 
-// data may not be cached, retry after 2 seconds
+// data may not be cached, retry after 2n seconds
 const requestRetry = async (url, ownerRepo) => {
-  let output = await octokit.request(url, ownerRepo);
-  if (Number(output.status) == 202) {
-    await pause(2000);
+  let output;
+  const max = 4;
+  for (let i = 0; i < max; i++){
     output = await octokit.request(url, ownerRepo);
+    if (Number(output.status) == 202) {
+      if (i == max-1) {
+        console.log("Request Retry failed");
+        break;
+      }
+      await pause(2000*(i+1));
+    } else {
+      break;
+    }
   }
+
   return output;
 };
 
