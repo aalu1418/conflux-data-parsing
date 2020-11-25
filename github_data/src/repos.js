@@ -1,8 +1,8 @@
 const { Octokit } = require("@octokit/rest");
 require("dotenv").config();
 const moment = require("moment");
-const fs = require("fs");
 const octokit = new Octokit({ auth: process.env.GITHUB });
+const { requestRetry, loopPages } = require("./utils.js");
 
 class GithubRepo {
   constructor(owner, repo) {
@@ -42,6 +42,14 @@ class GithubRepo {
       .unix(raw.data.rate.reset)
       .format("MMM D YYYY, h:mm:ss a");
     console.log(raw.data.rate);
+  }
+
+  async getContributors() {
+    const raw = await requestRetry(
+      "GET /repos/{owner}/{repo}/stats/contributors",
+      this.ownerRepo
+    );
+    this.contributors = raw.data;
   }
 
   // get total number of direct forks (does not include forks of forks)
@@ -114,79 +122,4 @@ class GithubRepo {
   }
 }
 
-// data may not be cached, retry after 2 seconds
-const requestRetry = async (url, ownerRepo) => {
-  let output = await octokit.request(url, ownerRepo);
-  if (Number(output.status) == 202) {
-    setTimeout(async () => {
-      output = await octokit.request(url, ownerRepo);
-    }, 2000);
-  }
-
-  return output;
-};
-
-//loop through multiple pages of data
-const loopPages = async (url, params, callback) => {
-  let i = 1; //starting with page 1 (page 0 is a duplicate of page 1)
-  while (true) {
-    const raw = await requestRetry(url, { ...params, per_page: 100, page: i });
-    callback(raw);
-
-    //iterate through pages if necessary
-    if (raw.data.length < 100) {
-      break;
-    } else {
-      i++;
-    }
-  }
-};
-
-const main = async () => {
-  const repoOwner = {
-    ethereum: ["go-ethereum", "web3.js"],
-    paritytech: ["substrate"],
-    "polkadot-js": ["api"],
-    cosmos: ["cosmos", "cosmos-sdk"],
-    near: ["nearcore", "near-api-js"],
-    "conflux-chain": ["conflux-rust", "js-conflux-sdk"]
-  };
-
-  //generate filename
-  const filename = "data_" + moment().format() + ".json";
-
-  //index over all the repo owners
-  for (let ind = 0; ind < Object.keys(repoOwner).length; ind++) {
-    const owner = Object.keys(repoOwner)[ind];
-
-    //loop over all the repos associated with owner
-    for (let i = 0; i < repoOwner[owner].length; i++) {
-      //adding components to form json object
-      let prefix = "";
-      let suffix = ",";
-      if (ind == 0 && i == 0) {
-        prefix = "[";
-      }
-      if (
-        ind == Object.keys(repoOwner).length - 1 &&
-        i == repoOwner[owner].length - 1
-      ) {
-        suffix = "]";
-      }
-
-      //querying the github api
-      const repo = new GithubRepo(owner, repoOwner[owner][i]);
-      await repo.getData();
-      console.log(repo);
-
-      //writing to file
-      fs.appendFile(filename, prefix + JSON.stringify(repo) + suffix, function(
-        err
-      ) {
-        if (err) throw err;
-      });
-    }
-  }
-};
-
-main().catch(e => console.log(e));
+module.exports = { GithubRepo };
