@@ -1,6 +1,7 @@
 const { Octokit } = require("@octokit/rest");
 require("dotenv").config();
-var moment = require("moment");
+const moment = require("moment");
+const fs = require("fs");
 const octokit = new Octokit({ auth: process.env.GITHUB });
 
 class GithubRepo {
@@ -11,6 +12,7 @@ class GithubRepo {
       .format();
   }
 
+  //get all data
   async getData() {
     console.log(
       "REPOSITORY: " + this.ownerRepo.owner + "/" + this.ownerRepo.repo
@@ -33,6 +35,7 @@ class GithubRepo {
     await this.getLines();
   }
 
+  // show usage stats
   async rateLimit() {
     const raw = await octokit.request("GET /rate_limit");
     raw.data.rate.reset = moment
@@ -41,6 +44,7 @@ class GithubRepo {
     console.log(raw.data.rate);
   }
 
+  // get total number of direct forks (does not include forks of forks)
   async getForks() {
     this.forks = 0;
     await loopPages("GET /repos/{owner}/{repo}/forks", this.ownerRepo, raw => {
@@ -48,6 +52,7 @@ class GithubRepo {
     });
   }
 
+  // get total number of stars
   async getStars() {
     this.stars = 0;
     await loopPages(
@@ -59,6 +64,7 @@ class GithubRepo {
     );
   }
 
+  // get number of commits the past year
   async getYearlyCommits() {
     const raw = await requestRetry(
       "GET /repos/{owner}/{repo}/stats/commit_activity",
@@ -67,6 +73,7 @@ class GithubRepo {
     this.commits = raw.data.reduce((a, b) => a + b.total, 0);
   }
 
+  // get issues/PRs opened and closed past year
   async getYearlyIssues() {
     let i = 0;
     this.prClosed = 0;
@@ -95,6 +102,7 @@ class GithubRepo {
     );
   }
 
+  // get lines of code added and removed over past year
   async getLines() {
     const raw = await requestRetry(
       "GET /repos/{owner}/{repo}/stats/code_frequency",
@@ -106,6 +114,7 @@ class GithubRepo {
   }
 }
 
+// data may not be cached, retry after 2 seconds
 const requestRetry = async (url, ownerRepo) => {
   let output = await octokit.request(url, ownerRepo);
   if (Number(output.status) == 202) {
@@ -117,6 +126,7 @@ const requestRetry = async (url, ownerRepo) => {
   return output;
 };
 
+//loop through multiple pages of data
 const loopPages = async (url, params, callback) => {
   let i = 1; //starting with page 1 (page 0 is a duplicate of page 1)
   while (true) {
@@ -133,9 +143,51 @@ const loopPages = async (url, params, callback) => {
 };
 
 const main = async () => {
-  const conflux = new GithubRepo("conflux-chain", "conflux-rust");
-  await conflux.getData();
-  console.log(conflux);
+  const repoOwner = {
+    "conflux-chain": ["conflux-rust", "js-conflux-sdk"],
+    near: ["nearcore", "near-api-js"],
+    cosmos: ["cosmos", "cosmos-sdk"],
+    paritytech: ["substrate"],
+    "polkadot-js": ["api"],
+    ethereum: ["go-ethereum", "web3.js"]
+  };
+
+  //generate filename
+  const filename = "data_" + moment().format() + ".json";
+
+  //index over all the repo owners
+  for (let ind = 0; ind < Object.keys(repoOwner).length; ind++) {
+    const owner = Object.keys(repoOwner)[ind];
+
+    //loop over all the repos associated with owner
+    for (let i = 0; i < repoOwner[owner].length; i++) {
+
+      //adding components to form json object
+      let prefix = "";
+      let suffix = ",";
+      if (ind == 0 && i == 0) {
+        prefix = "[";
+      }
+      if (
+        ind == Object.keys(repoOwner).length - 1 &&
+        i == repoOwner[owner].length - 1
+      ) {
+        suffix = "]";
+      }
+
+      //querying the github api
+      const repo = new GithubRepo(owner, repoOwner[owner][i]);
+      await repo.getData();
+      console.log(repo);
+
+      //writing to file
+      fs.appendFile(filename, prefix + JSON.stringify(repo) + suffix, function(
+        err
+      ) {
+        if (err) throw err;
+      });
+    }
+  }
 };
 
 main().catch(e => console.log(e));
