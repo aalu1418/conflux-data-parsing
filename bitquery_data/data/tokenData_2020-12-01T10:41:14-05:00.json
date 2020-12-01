@@ -1,0 +1,1039 @@
+[
+  {
+    "currency": { "symbol": "CFX", "address": "-" },
+    "count": 504008,
+    "senders": 49044,
+    "receivers": 38649,
+    "days": 35,
+    "from_date": "2020-10-28",
+    "till_date": "2020-12-01",
+    "amount": 308244912.38164836
+  },
+  {
+    "currency": {
+      "symbol": "CRCL_USDT_symbol",
+      "address": "0x8287cb032e6e72ce5501d6148fda7148d2556064"
+    },
+    "count": 486018,
+    "senders": 1209,
+    "receivers": 1214,
+    "days": 34,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 11181288.44591446
+  },
+  {
+    "currency": {
+      "symbol": "CRCL_ETH_symbol",
+      "address": "0x83b17dc886a35015fdb5965ae1ed18eee018e411"
+    },
+    "count": 251295,
+    "senders": 166,
+    "receivers": 173,
+    "days": 34,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 2555.455923943037
+  },
+  {
+    "currency": {
+      "symbol": "cMOON",
+      "address": "0x8e28460074f2ff545053e502e774dddc97125110"
+    },
+    "count": 233141,
+    "senders": 4185,
+    "receivers": 10543,
+    "days": 34,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 24302376.40192561
+  },
+  {
+    "currency": {
+      "symbol": "CRCL_BTC_symbol",
+      "address": "0x8269f0add11b4915d78791470d091d25cff73ee5"
+    },
+    "count": 226419,
+    "senders": 43,
+    "receivers": 46,
+    "days": 33,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 21.95593681191283
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x8a3fbd2d1d6859048954054d6b42cd48f5b0dcbf"
+    },
+    "count": 91390,
+    "senders": 570,
+    "receivers": 613,
+    "days": 34,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 1224738.6543239544
+  },
+  {
+    "currency": {
+      "symbol": "cETH",
+      "address": "0x86d2fb177eff4be03a342951269096265b98ac46"
+    },
+    "count": 85627,
+    "senders": 870,
+    "receivers": 912,
+    "days": 34,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 69706.34652484437
+  },
+  {
+    "currency": {
+      "symbol": "FC",
+      "address": "0x8e2f2e68eb75bb8b18caafe9607242d4748f8d98"
+    },
+    "count": 76342,
+    "senders": 6058,
+    "receivers": 12521,
+    "days": 34,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 30874331.785238914
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x81adc0ec4e07747625f53f8ea9bdfcb41aac968d"
+    },
+    "count": 46043,
+    "senders": 2115,
+    "receivers": 2143,
+    "days": 32,
+    "from_date": "2020-10-31",
+    "till_date": "2020-12-01",
+    "amount": 7019811.748661344
+  },
+  {
+    "currency": {
+      "symbol": "cUSDT",
+      "address": "0x8b8689c7f3014a4d86e4d1d0daaf74a47f5e0f27"
+    },
+    "count": 43888,
+    "senders": 4428,
+    "receivers": 4513,
+    "days": 34,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 18145801.540962014
+  },
+  {
+    "currency": {
+      "symbol": "DEX-CFX",
+      "address": "0x81893be75644b106c4b392b621dad15581748177"
+    },
+    "count": 25733,
+    "senders": 897,
+    "receivers": 1026,
+    "days": 28,
+    "from_date": "2020-11-04",
+    "till_date": "2020-12-01",
+    "amount": 55367539.829040885
+  },
+  {
+    "currency": {
+      "symbol": "WCFX",
+      "address": "0x8d7df9316faa0586e175b5e6d03c6bda76e3d950"
+    },
+    "count": 20012,
+    "senders": 10,
+    "receivers": 12,
+    "days": 32,
+    "from_date": "2020-10-31",
+    "till_date": "2020-12-01",
+    "amount": 42371669.4961871
+  },
+  {
+    "currency": {
+      "symbol": "CRCL_FC_symbol",
+      "address": "0x80bb30efc5683758128b404fe5da03432eb16634"
+    },
+    "count": 13970,
+    "senders": 743,
+    "receivers": 701,
+    "days": 34,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 11415565.015921215
+  },
+  {
+    "currency": {
+      "symbol": "fUSDT",
+      "address": "0x82185822a4adc0f1b2de5f6ca7fbf9a23d546c37"
+    },
+    "count": 1765,
+    "senders": 35,
+    "receivers": 1668,
+    "days": 20,
+    "from_date": "2020-11-01",
+    "till_date": "2020-12-01",
+    "amount": 143889.43178808858
+  },
+  {
+    "currency": {
+      "symbol": "cLEND",
+      "address": "0x8a5be57bd2f4fb6054e405e99473697445816dda"
+    },
+    "count": 1698,
+    "senders": 52,
+    "receivers": 52,
+    "days": 34,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 7775764.697232767
+  },
+  {
+    "currency": {
+      "symbol": "cDAI",
+      "address": "0x87929dda85a959f52cab6083a2fba1b9973f15e0"
+    },
+    "count": 1661,
+    "senders": 128,
+    "receivers": 154,
+    "days": 34,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 6149170.877589661
+  },
+  {
+    "currency": {
+      "symbol": "cUSDC",
+      "address": "0x817cba144f54134e5fa664142ff11df3c74a1c76"
+    },
+    "count": 1402,
+    "senders": 74,
+    "receivers": 72,
+    "days": 34,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 3423789.0788666015
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x8252f7cb4a8a1b808948cc7bf044911e0d2f250e"
+    },
+    "count": 1087,
+    "senders": 38,
+    "receivers": 38,
+    "days": 33,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-30",
+    "amount": 452398.2814628792
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x8d545118d91c027c805c552f63a5c00a20ae6aca"
+    },
+    "count": 921,
+    "senders": 74,
+    "receivers": 93,
+    "days": 31,
+    "from_date": "2020-10-31",
+    "till_date": "2020-11-30",
+    "amount": 210363.6893924661
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x8689b0c36d65f0cbed051dd36a649d3c68d67b6f"
+    },
+    "count": 767,
+    "senders": 60,
+    "receivers": 66,
+    "days": 34,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 319530.6450645819
+  },
+  {
+    "currency": {
+      "symbol": "xMOON",
+      "address": "0x86897fff70592e3973f637b39da4208797192a1a"
+    },
+    "count": 736,
+    "senders": 68,
+    "receivers": 290,
+    "days": 6,
+    "from_date": "2020-11-26",
+    "till_date": "2020-12-01",
+    "amount": 1050635.6897105263
+  },
+  {
+    "currency": {
+      "symbol": "cAave",
+      "address": "0x87313bc0efe750326c4708d97500c80bfe9ce150"
+    },
+    "count": 679,
+    "senders": 55,
+    "receivers": 55,
+    "days": 18,
+    "from_date": "2020-11-14",
+    "till_date": "2020-12-01",
+    "amount": 18265.872094468243
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x8dfa3b664cd6a62bc30f31a9f167f68806ef3488"
+    },
+    "count": 654,
+    "senders": 37,
+    "receivers": 38,
+    "days": 30,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 225281.88060747884
+  },
+  {
+    "currency": {
+      "symbol": "cBAND",
+      "address": "0x83416407889ec9ec400965c5dddf2c7567b60de5"
+    },
+    "count": 603,
+    "senders": 47,
+    "receivers": 50,
+    "days": 33,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-30",
+    "amount": 92209.66999978012
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x89c630957c92e234b1352ff21afd4755b9706ca1"
+    },
+    "count": 587,
+    "senders": 49,
+    "receivers": 51,
+    "days": 18,
+    "from_date": "2020-11-14",
+    "till_date": "2020-12-01",
+    "amount": 6466.512611273675
+  },
+  {
+    "currency": {
+      "symbol": "cLINK",
+      "address": "0x8504694fd254b3d5b70e664e6f2be679fd3c5612"
+    },
+    "count": 540,
+    "senders": 63,
+    "receivers": 64,
+    "days": 34,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 119059.29358224037
+  },
+  {
+    "currency": {
+      "symbol": "cYFI",
+      "address": "0x8a4a948c16a509a30551680bcbe99220f4f64f04"
+    },
+    "count": 510,
+    "senders": 27,
+    "receivers": 26,
+    "days": 33,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 63.68197421580857
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x8c1cf91db687d1a031e531dc7648d44f81ae5ad2"
+    },
+    "count": 450,
+    "senders": 43,
+    "receivers": 46,
+    "days": 25,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-30",
+    "amount": 21042.30216355721
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x8169de4fb49b0df097037e5b4e10eeb9c91389f3"
+    },
+    "count": 431,
+    "senders": 32,
+    "receivers": 32,
+    "days": 18,
+    "from_date": "2020-11-14",
+    "till_date": "2020-12-01",
+    "amount": 2363.9589241756366
+  },
+  {
+    "currency": {
+      "symbol": "cDPI",
+      "address": "0x8899db8d65c221a60cbc02dc465debdcd97af475"
+    },
+    "count": 431,
+    "senders": 34,
+    "receivers": 34,
+    "days": 18,
+    "from_date": "2020-11-14",
+    "till_date": "2020-12-01",
+    "amount": 7343.666892969163
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x8f9310a771af9f5dfd9c9f4723220f68ca19e3dc"
+    },
+    "count": 398,
+    "senders": 33,
+    "receivers": 34,
+    "days": 29,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-28",
+    "amount": 7757.772411994774
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x89ca8f6e0bb9e38f3f1e0bc4af9670049562a8fb"
+    },
+    "count": 391,
+    "senders": 44,
+    "receivers": 44,
+    "days": 21,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-30",
+    "amount": 103125.91303418783
+  },
+  {
+    "currency": {
+      "symbol": "cDF",
+      "address": "0x8593d5bd26fb61096d0fef2340b213b80bf6e88c"
+    },
+    "count": 382,
+    "senders": 60,
+    "receivers": 74,
+    "days": 33,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 3377826.026075019
+  },
+  {
+    "currency": {
+      "symbol": "cCOMP",
+      "address": "0x8441c5a4514eaa2b962fe1a598e1f41f31182f0e"
+    },
+    "count": 376,
+    "senders": 54,
+    "receivers": 58,
+    "days": 33,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 5931.010474891598
+  },
+  {
+    "currency": {
+      "symbol": "fCFX",
+      "address": "0x852dedfe1e87ed3d898552797df500008bd5b0b4"
+    },
+    "count": 318,
+    "senders": 47,
+    "receivers": 117,
+    "days": 16,
+    "from_date": "2020-11-16",
+    "till_date": "2020-12-01",
+    "amount": 334653.6004394353
+  },
+  {
+    "currency": {
+      "symbol": "cSWRV",
+      "address": "0x8692f72d3e09292b270c8631dad2a66392d010c9"
+    },
+    "count": 314,
+    "senders": 40,
+    "receivers": 41,
+    "days": 23,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-30",
+    "amount": 274369.73857271374
+  },
+  {
+    "currency": {
+      "symbol": "cBEL",
+      "address": "0x84cf0d4c92d9fb094b0b241aab092c7c40878c86"
+    },
+    "count": 268,
+    "senders": 41,
+    "receivers": 43,
+    "days": 13,
+    "from_date": "2020-11-18",
+    "till_date": "2020-12-01",
+    "amount": 82781.3180920489
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x8134604f2b3a37cc4b8adce761e88e9b400a56a9"
+    },
+    "count": 265,
+    "senders": 36,
+    "receivers": 37,
+    "days": 10,
+    "from_date": "2020-11-19",
+    "till_date": "2020-11-28",
+    "amount": 66936.57069149209
+  },
+  {
+    "currency": {
+      "symbol": "fFC",
+      "address": "0x832b068632a20163891cc2e0f95fde6cec287b4b"
+    },
+    "count": 255,
+    "senders": 46,
+    "receivers": 75,
+    "days": 16,
+    "from_date": "2020-11-16",
+    "till_date": "2020-12-01",
+    "amount": 2141782.611135463
+  },
+  {
+    "currency": {
+      "symbol": "cFARM",
+      "address": "0x8f511e5b5153d4a87649cd717c961d28742a4119"
+    },
+    "count": 230,
+    "senders": 40,
+    "receivers": 43,
+    "days": 14,
+    "from_date": "2020-11-18",
+    "till_date": "2020-12-01",
+    "amount": 1991.2147745104737
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x8e1cd32edde5731d73be021ae84ccc1a800bdd89"
+    },
+    "count": 217,
+    "senders": 28,
+    "receivers": 31,
+    "days": 11,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-24",
+    "amount": 9030.182364563056
+  },
+  {
+    "currency": {
+      "symbol": "cYFII",
+      "address": "0x8531b4bd1662b7ca943a3d27794203c7ace53e72"
+    },
+    "count": 204,
+    "senders": 31,
+    "receivers": 31,
+    "days": 26,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 126.23703121602283
+  },
+  {
+    "currency": {
+      "symbol": "cFOR",
+      "address": "0x85781f4578f483b88dffe09f2d3e82d21afa8955"
+    },
+    "count": 170,
+    "senders": 24,
+    "receivers": 22,
+    "days": 31,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 4104901.6112418426
+  },
+  {
+    "currency": {
+      "symbol": "cKP3R",
+      "address": "0x8620339889f0955ad4d14f7bf566af900822ff37"
+    },
+    "count": 162,
+    "senders": 35,
+    "receivers": 39,
+    "days": 14,
+    "from_date": "2020-11-14",
+    "till_date": "2020-11-30",
+    "amount": 294.6894129415524
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x8af38b30e92458e34dfdff7c4e47df0f6e4d0044"
+    },
+    "count": 161,
+    "senders": 23,
+    "receivers": 24,
+    "days": 9,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-24",
+    "amount": 117.53974428028302
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x83b2fdd5cc79652a1b1c57cd786df80299cfbc3b"
+    },
+    "count": 142,
+    "senders": 27,
+    "receivers": 27,
+    "days": 12,
+    "from_date": "2020-11-19",
+    "till_date": "2020-11-30",
+    "amount": 846.5223672662111
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x885c3a9781692efa9b510a65f8bcb77df4571941"
+    },
+    "count": 133,
+    "senders": 26,
+    "receivers": 26,
+    "days": 21,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-29",
+    "amount": 2685.036690985981
+  },
+  {
+    "currency": {
+      "symbol": "cUMA",
+      "address": "0x8f9129fd9549f7a4f313d23a95c02d815131868b"
+    },
+    "count": 119,
+    "senders": 25,
+    "receivers": 24,
+    "days": 24,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-30",
+    "amount": 29427.268472969798
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x87cbc4f52e858d50c138cc293b323a5c0b7008d9"
+    },
+    "count": 109,
+    "senders": 32,
+    "receivers": 32,
+    "days": 7,
+    "from_date": "2020-11-14",
+    "till_date": "2020-11-26",
+    "amount": 110.53600013283388
+  },
+  {
+    "currency": {
+      "symbol": "cMOONLP TOKEN Aave/ETH",
+      "address": "0x885cc11651d0babbfe45cbb0967318f700221113"
+    },
+    "count": 94,
+    "senders": 48,
+    "receivers": 48,
+    "days": 3,
+    "from_date": "2020-11-14",
+    "till_date": "2020-11-19",
+    "amount": 2129.4906115101207
+  },
+  {
+    "currency": {
+      "symbol": "cMKR",
+      "address": "0x83d294a299d06ec032d9fcc7b0fa5597e67491cb"
+    },
+    "count": 89,
+    "senders": 18,
+    "receivers": 18,
+    "days": 13,
+    "from_date": "2020-11-18",
+    "till_date": "2020-11-30",
+    "amount": 267.0132684688014
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x8b2b1e1a0b95ed3a665beb0d4853378696c77de4"
+    },
+    "count": 85,
+    "senders": 24,
+    "receivers": 25,
+    "days": 14,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-30",
+    "amount": 52241.46345692696
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x8682b717b3c58b13eda003b2b209d7fa59eb2bb1"
+    },
+    "count": 85,
+    "senders": 18,
+    "receivers": 18,
+    "days": 10,
+    "from_date": "2020-11-19",
+    "till_date": "2020-11-28",
+    "amount": 324.70882405733533
+  },
+  {
+    "currency": {
+      "symbol": "cBTC",
+      "address": "0x821c636dfc85d0612fb8ebf34acf84771ba4c344"
+    },
+    "count": 69,
+    "senders": 20,
+    "receivers": 22,
+    "days": 20,
+    "from_date": "2020-10-29",
+    "till_date": "2020-12-01",
+    "amount": 17.519577209999998
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x858852301c06c3e3879b2bfa114d998f9e5b319f"
+    },
+    "count": 67,
+    "senders": 15,
+    "receivers": 16,
+    "days": 11,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-26",
+    "amount": 172.11709219013082
+  },
+  {
+    "currency": {
+      "symbol": "fETH",
+      "address": "0x8157bd3def177f17fa73658d33479e1e134b05f8"
+    },
+    "count": 61,
+    "senders": 12,
+    "receivers": 25,
+    "days": 16,
+    "from_date": "2020-11-01",
+    "till_date": "2020-11-30",
+    "amount": 87.22433205708225
+  },
+  {
+    "currency": {
+      "symbol": "CRCL_DAI_symbol",
+      "address": "0x82817627377975d97b9d9e95b155630fa61c9914"
+    },
+    "count": 61,
+    "senders": 59,
+    "receivers": 2,
+    "days": 19,
+    "from_date": "2020-11-03",
+    "till_date": "2020-11-28",
+    "amount": 127.58726385000003
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x87749fe4effe40dc9c9c6e1070df0a6494a48d9e"
+    },
+    "count": 57,
+    "senders": 19,
+    "receivers": 20,
+    "days": 14,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-28",
+    "amount": 4112.029722979302
+  },
+  {
+    "currency": {
+      "symbol": "cMOONLP TOKEN KP3R/ETH",
+      "address": "0x85dc011bff5c05937fecc9d2437861bcef90ca95"
+    },
+    "count": 50,
+    "senders": 23,
+    "receivers": 23,
+    "days": 6,
+    "from_date": "2020-11-14",
+    "till_date": "2020-11-25",
+    "amount": 44.089799373262665
+  },
+  {
+    "currency": {
+      "symbol": "MLP",
+      "address": "0x83bee84d4090713160c5d505b72de89f6815d4b4"
+    },
+    "count": 45,
+    "senders": 13,
+    "receivers": 14,
+    "days": 9,
+    "from_date": "2020-10-29",
+    "till_date": "2020-11-30",
+    "amount": 11853.34787562811
+  },
+  {
+    "currency": {
+      "symbol": "cKNC",
+      "address": "0x80a17fd515c1fc819e87e606c058490ac1f14ca7"
+    },
+    "count": 41,
+    "senders": 2,
+    "receivers": 41,
+    "days": 18,
+    "from_date": "2020-11-04",
+    "till_date": "2020-11-28",
+    "amount": 41.3106
+  },
+  {
+    "currency": {
+      "symbol": "CRCL_KNC_symbol",
+      "address": "0x8f7202c3aea7339cb17bd44aef236e630fdfc1be"
+    },
+    "count": 40,
+    "senders": 40,
+    "receivers": 1,
+    "days": 17,
+    "from_date": "2020-11-04",
+    "till_date": "2020-11-28",
+    "amount": 39.778
+  },
+  {
+    "currency": {
+      "symbol": "CRCL_DF_symbol",
+      "address": "0x8df85740cb669400bfdcbbb6f9001e408ddd61e5"
+    },
+    "count": 40,
+    "senders": 40,
+    "receivers": 2,
+    "days": 18,
+    "from_date": "2020-11-03",
+    "till_date": "2020-11-28",
+    "amount": 333.76050000000004
+  },
+  {
+    "currency": {
+      "symbol": "cMOONLP TOKEN MOON-ETH",
+      "address": "0x87be0ba8e22e827c5293463dcc93fe8382430ecd"
+    },
+    "count": 28,
+    "senders": 15,
+    "receivers": 15,
+    "days": 11,
+    "from_date": "2020-10-30",
+    "till_date": "2020-11-22",
+    "amount": 379.2203223071481
+  },
+  {
+    "currency": {
+      "symbol": "CRCL_COMP_symbol",
+      "address": "0x891c8a79d7bbc0b93f0d6c2fa9ec3cf2a4e9bdfa"
+    },
+    "count": 28,
+    "senders": 28,
+    "receivers": 1,
+    "days": 9,
+    "from_date": "2020-11-04",
+    "till_date": "2020-11-21",
+    "amount": 0.0787
+  },
+  {
+    "currency": {
+      "symbol": "fDAI",
+      "address": "0x87e6fd81195a67a7f75aa7f37ed1c3deb4b43972"
+    },
+    "count": 16,
+    "senders": 4,
+    "receivers": 9,
+    "days": 10,
+    "from_date": "2020-11-01",
+    "till_date": "2020-11-23",
+    "amount": 830.4228515112144
+  },
+  {
+    "currency": {
+      "symbol": "cMOONLP TOKEN DPI/ETH",
+      "address": "0x8bde1795f027e013e6a01c4c00ce4c5fda14faf0"
+    },
+    "count": 16,
+    "senders": 9,
+    "receivers": 9,
+    "days": 3,
+    "from_date": "2020-11-14",
+    "till_date": "2020-11-18",
+    "amount": 261.735046256122
+  },
+  {
+    "currency": {
+      "symbol": "CK",
+      "address": "0x82e2479fb73cee49da8becdc1f3f5a85bcfb7dab"
+    },
+    "count": 15,
+    "senders": 2,
+    "receivers": 14,
+    "days": 2,
+    "from_date": "2020-11-22",
+    "till_date": "2020-11-23",
+    "amount": 17429.999999999996
+  },
+  {
+    "currency": {
+      "symbol": "wrt",
+      "address": "0x8dd56d704011a07761b4d2560c2901598c4470cc"
+    },
+    "count": 9,
+    "senders": 2,
+    "receivers": 4,
+    "days": 1,
+    "from_date": "2020-12-01",
+    "till_date": "2020-12-01",
+    "amount": 172711.99999999997
+  },
+  {
+    "currency": {
+      "symbol": "fUSDC",
+      "address": "0x82e572bde3482d028838b43f56f8fd7cb16af6d5"
+    },
+    "count": 6,
+    "senders": 3,
+    "receivers": 3,
+    "days": 4,
+    "from_date": "2020-11-13",
+    "till_date": "2020-11-23",
+    "amount": 954.7199874217148
+  },
+  {
+    "currency": {
+      "symbol": "NBC",
+      "address": "0x84c200d451243cda67e249fff91f04257dcbb29e"
+    },
+    "count": 5,
+    "senders": 2,
+    "receivers": 5,
+    "days": 1,
+    "from_date": "2020-11-22",
+    "till_date": "2020-11-22",
+    "amount": 14651
+  },
+  {
+    "currency": {
+      "symbol": "YU",
+      "address": "0x80a4af4d1aec19521eccc77270c734aae62b23b8"
+    },
+    "count": 4,
+    "senders": 2,
+    "receivers": 4,
+    "days": 1,
+    "from_date": "2020-11-26",
+    "till_date": "2020-11-26",
+    "amount": 22799.999999999996
+  },
+  {
+    "currency": {
+      "symbol": "cMOONLP TOKEN DF-ETH",
+      "address": "0x8e026bad5a0871dee21caeb210afba62ec514d5c"
+    },
+    "count": 2,
+    "senders": 2,
+    "receivers": 2,
+    "days": 1,
+    "from_date": "2020-10-30",
+    "till_date": "2020-10-30",
+    "amount": 3.5905937599184083
+  },
+  {
+    "currency": {
+      "symbol": "cMOONLP TOKEN UMA-ETH",
+      "address": "0x8b7677f947c6831f5afbe45c87add3fe4baae386"
+    },
+    "count": 2,
+    "senders": 2,
+    "receivers": 2,
+    "days": 1,
+    "from_date": "2020-11-05",
+    "till_date": "2020-11-05",
+    "amount": 67.56065604548408
+  },
+  {
+    "currency": {
+      "symbol": "Fucoin",
+      "address": "0x89b190b981cce99da908452d3007e612f60ff7c1"
+    },
+    "count": 2,
+    "senders": 1,
+    "receivers": 2,
+    "days": 1,
+    "from_date": "2020-11-30",
+    "till_date": "2020-11-30",
+    "amount": 82443.6662
+  },
+  {
+    "currency": {
+      "symbol": "cUNI",
+      "address": "0x891d8a1749c8c62532cc33a32f1b3a879d16ac7d"
+    },
+    "count": 1,
+    "senders": 1,
+    "receivers": 1,
+    "days": 1,
+    "from_date": "2020-11-28",
+    "till_date": "2020-11-28",
+    "amount": 13.502504475554893
+  },
+  {
+    "currency": {
+      "symbol": "Error in symbol",
+      "address": "0x81f645e2861aef366dbffa5a5cff05b6de6a488f"
+    },
+    "count": 1,
+    "senders": 1,
+    "receivers": 1,
+    "days": 1,
+    "from_date": "2020-11-28",
+    "till_date": "2020-11-28",
+    "amount": 100.00001230340004
+  },
+  {
+    "currency": {
+      "symbol": "observer",
+      "address": "0x88b4ad7d431d76de781e3759454fd8850daf3cce"
+    },
+    "count": 1,
+    "senders": 1,
+    "receivers": 1,
+    "days": 1,
+    "from_date": "2020-11-22",
+    "till_date": "2020-11-22",
+    "amount": 12600
+  },
+  {
+    "currency": {
+      "symbol": "Error in symbol",
+      "address": "0x856898248ecac4aadce76ffa8ba11b2b296c84d2"
+    },
+    "count": 1,
+    "senders": 1,
+    "receivers": 1,
+    "days": 1,
+    "from_date": "2020-11-28",
+    "till_date": "2020-11-28",
+    "amount": 100.00005638002602
+  },
+  {
+    "currency": {
+      "symbol": "YAN",
+      "address": "0x80fbaa1b6e712970cf36640c813103b8ae8ebf91"
+    },
+    "count": 1,
+    "senders": 1,
+    "receivers": 1,
+    "days": 1,
+    "from_date": "2020-11-26",
+    "till_date": "2020-11-26",
+    "amount": 60000
+  }
+]

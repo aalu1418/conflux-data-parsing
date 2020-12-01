@@ -1,62 +1,51 @@
-const { request, gql } = require("graphql-request");
-const fs = require("fs");
+const { gql } = require("graphql-request");
+const { get, write } = require("./src/utils.js");
 
-const get = async (from, offset, limit = 100) => {
-  const endpoint = "https://graphql.bitquery.io";
-  const variables = {
-    limit,
-    offset,
-    network: "conflux_tethys",
-    from,
-    till: null
-  };
-
-  const query = gql`
-    query(
-      $network: ConfluxNetwork!
-      $limit: Int!
-      $offset: Int!
-      $from: ISO8601DateTime
-      $till: ISO8601DateTime
-    ) {
-      conflux(network: $network) {
-        transactions(
-          options: {
-            desc: ["block.height", "to.address"]
-            limit: $limit
-            offset: $offset
+// graphql query
+const query = gql`
+  query(
+    $network: ConfluxNetwork!
+    $limit: Int!
+    $offset: Int!
+    $from: ISO8601DateTime
+    $till: ISO8601DateTime
+  ) {
+    conflux(network: $network) {
+      transactions(
+        options: {
+          desc: ["block.height", "to.address"]
+          limit: $limit
+          offset: $offset
+        }
+        date: { since: $from, till: $till }
+      ) {
+        block {
+          timestamp {
+            time(format: "%Y-%m-%d %H:%M:%S")
           }
-          date: { since: $from, till: $till }
-        ) {
-          block {
-            timestamp {
-              time(format: "%Y-%m-%d %H:%M:%S")
-            }
-            height
-          }
-          hash
-          creates {
-            address
-          }
-          to {
-            address
-          }
+          height
+        }
+        hash
+        creates {
+          address
+        }
+        to {
+          address
         }
       }
     }
-  `;
+  }
+`;
 
-  return await request(endpoint, query, variables);
-};
-
+//main loop to cycle through all transactions
 const main = async () => {
   const spacing = 1000;
   let ind = 0;
   let output = [];
 
   while (true) {
-    const res = await get("2020-01-01", ind, 1000);
-    // check if contract created
+    const res = await get(query, "2020-01-01", ind, 1000);
+    // check if contract created and filtering
     const newContracts = res.conflux.transactions.filter(
       obj => !!obj.creates.address
     );
@@ -71,7 +60,7 @@ const main = async () => {
         " contracts created"
     );
 
-    output = [...output, ...newContracts];
+    output = [...output, ...newContracts]; //adding data to array
 
     //trigger for breaking loop
     const returnLength = res.conflux.transactions.length;
@@ -83,10 +72,8 @@ const main = async () => {
     }
   }
 
-  //writing to file
-  fs.appendFile("test.json", JSON.stringify(output), function(err) {
-    if (err) throw err;
-  });
+  //writing to file once loop complete
+  write("contractsCreated", output)
 };
 
 main().catch(error => console.error(error));

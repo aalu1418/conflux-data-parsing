@@ -14,3 +14,4 @@ Miscellaneous repository for various data parsing from various sources
 ### bitquery_data
 * Bitquery (GraphQL, transaction data)
    * `inefficientGetContractCreation.js` - cycle through all transactions to find contract creation (method for GraphQL API not available)
+   * `tokenTransfers.js` - pull token data from bitquery
