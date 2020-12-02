@@ -6,7 +6,7 @@ const fs = require("fs");
 // data may not be cached, retry after 2n seconds
 const requestRetry = async (url, ownerRepo) => {
   let output;
-  const max = 4;
+  const max = 10;
   for (let i = 0; i < max; i++){
     output = await octokit.request(url, ownerRepo);
     if (Number(output.status) == 202) {

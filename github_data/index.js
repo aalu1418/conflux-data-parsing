@@ -11,7 +11,12 @@ const repos = async () => {
     "polkadot-js": ["api"],
     cosmos: ["cosmos", "cosmos-sdk"],
     near: ["nearcore", "near-api-js"],
-    "conflux-chain": ["conflux-rust", "js-conflux-sdk"]
+    "conflux-chain": ["conflux-rust", "js-conflux-sdk"],
+    "solana-labs": ["solana", "solana-web3.js"],
+    "neo-project": ["neo"],
+    "CityOfZion": ["neon-js"],
+    ontio: ["ontology", "ontology-ts-sdk"],
+    vechain: ["thor", "thor-devkit.js"]
   };
 
   //generate filename
@@ -40,7 +45,17 @@ const repos = async () => {
 };
 
 const devsPull = async () => {
-  const topics = ["conflux", "nearprotocol", "polkadot", "cosmos", "ethereum"];
+  const topics = [
+    "conflux",
+    "nearprotocol",
+    "polkadot",
+    "cosmos",
+    "ethereum",
+    "solana",
+    "neo",
+    "blockchain+ontology",
+    "vechain"
+  ];
   const filename = "./data/devs_" + moment().format() + ".json";
 
   for (let i = 0; i < topics.length; i++) {

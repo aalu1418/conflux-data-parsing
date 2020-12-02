@@ -12,14 +12,21 @@ class GithubTopic {
     this.oneYearAgo = moment()
       .subtract(1, "years")
       .format();
-    this.userA = {};
-    this.userD = {};
-    this.userC = {};
     this.repositories = 0;
+    this.weekly = {
+      a: new Array(52).fill(0),
+      d: new Array(52).fill(0),
+      c: new Array(52).fill(0)
+    };
+    this.user = {};
   }
 
   async search() {
-    const q = "topic:"+this.topic;
+    //parse specifiers
+    const parameters = this.topic.split("+")
+    this.topic = parameters[parameters.length - 1];
+    parameters[parameters.length - 1] = "topic:"+parameters[parameters.length - 1]
+    const q = parameters.join("+");
     try {
       const raw = await loopPages(
         "GET /search/repositories",
@@ -47,25 +54,21 @@ class GithubTopic {
               const weeks = contributor.weeks.slice(-52); //get past 52 weeks (1 year)
 
               // set up 0 for addition
-              if (this.userA[contributor.author.login] == undefined) {
-                this.userA[contributor.author.login] = 0;
-                this.userD[contributor.author.login] = 0;
-                this.userC[contributor.author.login] = 0;
+              if (this.user[contributor.author.login] == undefined) {
+                this.user[contributor.author.login] = {
+                  a: new Array(52).fill(0),
+                  d: new Array(52).fill(0),
+                  c: new Array(52).fill(0)
+                };
               }
 
-              //add totals from repos
-              this.userA[contributor.author.login] += weeks.reduce(
-                (a, b) => a + b.a,
-                0
-              );
-              this.userD[contributor.author.login] += weeks.reduce(
-                (a, b) => a + b.d,
-                0
-              );
-              this.userC[contributor.author.login] += weeks.reduce(
-                (a, b) => a + b.c,
-                0
-              );
+              for (let i = 1; i <= weeks.length; i++) {
+                ["a", "d", "c"].forEach(param => {
+                  this.user[contributor.author.login][param][52 - i] +=
+                    weeks[weeks.length - i][param];
+                  this.weekly[param][52 - i] += weeks[weeks.length - i][param];
+                });
+              }
             });
           }
         }
