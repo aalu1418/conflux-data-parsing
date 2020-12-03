@@ -3,14 +3,14 @@ const fs = require("fs");
 const moment = require("moment");
 
 // call the bitquery endpoint
-const get = async (query, from, offset, limit = 100) => {
+const get = async (query, from, offset, limit = 100, till = null) => {
   const endpoint = "https://graphql.bitquery.io";
   const variables = {
     limit,
     offset,
     network: "conflux_tethys",
     from,
-    till: null
+    till
   };
 
   return await request(endpoint, query, variables);

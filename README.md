@@ -15,3 +15,10 @@ Miscellaneous repository for various data parsing from various sources
 * Bitquery (GraphQL, transaction data)
    * `inefficientGetContractCreation.js` - cycle through all transactions to find contract creation (method for GraphQL API not available)
    * `tokenTransfers.js` - pull token data from bitquery
+   * `parse.js` - process transaction data + value of transactions
+
+
+## Data Resources
+* https://api.coingecko.com/api/v3/coins/list
+* https://docs.github.com/en/free-pro-team@latest/rest
+* https://explorer.bitquery.io/conflux_tethys
