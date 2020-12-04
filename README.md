@@ -5,6 +5,7 @@ Miscellaneous repository for various data parsing from various sources
    * `parseConfluxscan*.py` - pull data from Confluxscan API
 * Mining metrics
    * `convertToCSV` - convert JSON objects from various sites to CSV
+   * `hashrateComp` - compare hashrate to various networks
 
 ### github_data
 * Github
@@ -15,7 +16,9 @@ Miscellaneous repository for various data parsing from various sources
 * Bitquery (GraphQL, transaction data)
    * `inefficientGetContractCreation.js` - cycle through all transactions to find contract creation (method for GraphQL API not available)
    * `tokenTransfers.js` - pull token data from bitquery
+   * `miners.js` - pull Conflux specific miner information
    * `parse.js` - process transaction data + value of transactions
+   * `plotter.js` - plot python figures
 
 
 ## Data Resources
