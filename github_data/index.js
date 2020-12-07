@@ -13,6 +13,7 @@ const repos = async () => {
     near: ["nearcore", "near-api-js"],
     "conflux-chain": ["conflux-rust", "js-conflux-sdk"],
     "solana-labs": ["solana", "solana-web3.js"],
+    "nervosnetwork": ["ckb", "ckb-sdk-js"],
     "neo-project": ["neo"],
     "CityOfZion": ["neon-js"],
     ontio: ["ontology", "ontology-ts-sdk"],
@@ -52,6 +53,7 @@ const devsPull = async () => {
     "cosmos",
     "ethereum",
     "solana",
+    "nervos",
     "neo",
     "blockchain+ontology",
     "vechain"

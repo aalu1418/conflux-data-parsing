@@ -86,6 +86,6 @@ class DevData:
 
 if __name__=='__main__':
     # data = DevData("./data/devs_2020-12-02T12:15:41-05:00.json")
-    data = DevData("./data/devs_2020-12-02T17:46:52-05:00.json")
+    data = DevData("./data/devs_2020-12-07T17:14:59-05:00.json")
 
     data.run()

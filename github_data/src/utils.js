@@ -32,7 +32,7 @@ const loopPages = async (url, params, callback) => {
 
     //iterate through pages if necessary
     let length = raw.data.length;
-    if (!raw.data.length) {
+    if (length == undefined ) {
       length = raw.data.items.length;
     }
 
