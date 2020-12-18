@@ -21,7 +21,7 @@ Miscellaneous repository for various data parsing from various sources
    * `plotter.js` - plot python figures
 
 
-## Data Resources
+## Misc Data Resources
 * https://api.coingecko.com/api/v3/coins/list
 * https://docs.github.com/en/free-pro-team@latest/rest
 * https://explorer.bitquery.io/conflux_tethys
